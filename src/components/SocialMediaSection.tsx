@@ -30,7 +30,7 @@ const INITIAL_POSTS: SocialPost[] = [
   {
     id: 'post-1',
     platform: 'Instagram',
-    image: '/src/assets/images/social_farm_harvest_1791292432241.jpg',
+    image: '/images/social_farm_harvest_1791292432241.jpg',
     author: 'Vimodaa Agro LLP',
     handle: '@vimodaaagro',
     date: '2 hours ago',
@@ -42,7 +42,7 @@ const INITIAL_POSTS: SocialPost[] = [
   {
     id: 'post-2',
     platform: 'Instagram',
-    image: '/src/assets/images/social_spice_market_1791292463130.jpg',
+    image: '/images/social_spice_market_1791292463130.jpg',
     author: 'Vimodaa Agro LLP',
     handle: '@vimodaaagro',
     date: '1 day ago',
@@ -54,7 +54,7 @@ const INITIAL_POSTS: SocialPost[] = [
   {
     id: 'post-3',
     platform: 'LinkedIn',
-    image: '/src/assets/images/social_export_loading_1791292478198.jpg',
+    image: '/images/social_export_loading_1791292478198.jpg',
     author: 'Vimodaa Agro LLP',
     handle: 'vimodaa-agro-llp',
     date: '2 days ago',
@@ -66,7 +66,7 @@ const INITIAL_POSTS: SocialPost[] = [
   {
     id: 'post-4',
     platform: 'Facebook',
-    image: '/src/assets/images/social_lab_quality_1791292495424.jpg',
+    image: '/images/social_lab_quality_1791292495424.jpg',
     author: 'Vimodaa Agro LLP',
     handle: '@vimodaaagroofficial',
     date: '3 days ago',

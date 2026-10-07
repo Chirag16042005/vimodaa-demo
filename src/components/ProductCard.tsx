@@ -49,7 +49,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           onError={(e) => {
-            (e.target as HTMLElement).style.display = 'none';
+            const target = e.target as HTMLImageElement;
+            target.src = 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80';
           }}
         />
 

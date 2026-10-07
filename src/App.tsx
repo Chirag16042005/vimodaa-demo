@@ -197,6 +197,7 @@ export default function App() {
               const el = document.getElementById('catalog-section');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }}
+            onOpenTracking={() => setIsTrackingOpen(true)}
           />
 
           {/* Featured Collections Spotlight */}
