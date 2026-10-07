@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Product, CartItem, Order, Currency } from './types';
+import { INITIAL_PRODUCTS, INITIAL_ORDERS } from './data/mockData';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ProductCard } from './components/ProductCard';
@@ -50,13 +51,23 @@ export default function App() {
         fetch('/api/orders'),
       ]);
 
-      const prodData = await prodRes.json();
-      const ordData = await ordRes.json();
+      if (prodRes.ok && ordRes.ok) {
+        const prodData = await prodRes.json();
+        const ordData = await ordRes.json();
 
-      if (prodData.success) setProducts(prodData.products);
-      if (ordData.success) setOrders(ordData.orders);
+        if (prodData.success) setProducts(prodData.products);
+        else setProducts(INITIAL_PRODUCTS);
+
+        if (ordData.success) setOrders(ordData.orders);
+        else setOrders(INITIAL_ORDERS);
+      } else {
+        setProducts(INITIAL_PRODUCTS);
+        setOrders(INITIAL_ORDERS);
+      }
     } catch (err) {
-      console.error('Failed to fetch initial application data:', err);
+      console.log('API offline (static Netlify mode), loading embedded dataset:', err);
+      setProducts(INITIAL_PRODUCTS);
+      setOrders(INITIAL_ORDERS);
     } finally {
       setLoading(false);
     }
