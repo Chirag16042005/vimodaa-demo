@@ -1,0 +1,6 @@
+{
+  "name": "Vimodaa Agro - Global Storefront & B2B Export Portal",
+  "description": "Premier e-commerce and bulk export platform for Indian spices, grains, pulses, oilseeds, mushrooms, and herbal products.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
